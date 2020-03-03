@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>BackEnd2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <!-- <div><a th:href="@{/BackEnd3/downloadList}" th:text="${descargaListado}"></a></div> -->
+  <div th:each="profile: ${itemsProfiles}">
+    <p th:text="${profile}"></p>
+  </div>
+</body>
+</html>

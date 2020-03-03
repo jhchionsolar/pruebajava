@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>BackEnd2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <div><a th:href="@{/BackEnd3/viewList}" th:text="${viewList}"></a></div>
+  <div th:text="${getList}"></div>
+  <form action="/BackEnd3/Register" method="POST" >
+    <label>nombre</label>
+    <input type="text" name="nombre" placeholder="Introduce el nombre">
+    <label>planeta</label>
+    <input type="text" name="planeta" placeholder="Introduce el planeta">
+    <input type="submit" value="Registra">
+  </form>
+</body>
+</html>

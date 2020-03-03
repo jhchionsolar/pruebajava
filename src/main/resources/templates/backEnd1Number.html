@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>BackEnd1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <h1>backEnd 1 Number</h1>
+  <div th:each="number: ${secuence}">
+    <p th:text="${number}"></p>
+  </div>
+    <!-- <p th:text="${number}"></p> -->
+    <!-- <a th:href="@{/{currentPath}/{number}(number=${number}, currentPath=${currentPath})}" th:text="${number}"></a> -->
+    <!-- <p><a th:href="/${number}" th:text="${number}"></a></p> -->
+</body>
+</html>

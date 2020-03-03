@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>BackEnd2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script>
+      // problemas con el cors
+      // let interval = false;
+      // function updateCountDown (sec) {
+      //   console.log('actualizando contenido');
+      //   document.querySelector('.countView').innerHTML = sec;
+      // }
+
+      // function call () {
+      //   console.log("ejecutando llamada");
+      //   var xhttp = new window.XMLHttpRequest();
+      //   xhttp.onreadystatechange = () => {
+      //     if (xhttp.readyState === xhttp.DONE) {
+      //       if (xhttp.status === 200) {
+      //         updateCountDown(xhttp.responseText);
+      //       } else if (xhttp.status !== 0) {}
+      //     }
+      //   }
+      //   xhttp.open("GET", "localhost:4000/BackEnd2/getRemaining", true);
+      //   xhttp.timeout = 30000;
+      //   xhttp.ontimeout = function (e) {
+      //     reject(new Error('[ERROR] en la comunicacion con el host'));
+      //   }
+      //   xhttp.setRequestHeader('Content-type', 'application/json');
+      //   xhttp.setRequestHeader('Accept', 'application/json');
+      //   xhttp.send();
+      // }
+
+      // window.addEventListener('load', () => {
+      //   interval = setInterval(() => { 
+      //     console.log("inteval");
+      //     call();
+      //     }, 500);
+      // })
+    </script>
+</head>
+<body>
+  <div class="countView" th:text="${initialCountDown}"></div>
+</body>
+</html>
